@@ -1,12 +1,18 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import add from './utils/fnc'
+import {add,mult,subs,dividedByTwoNumbers as divided} from './utils/fnc'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
   const sum = add(5,6)
+  const substract = subs(25,15)
+  const multiplyer = mult(10,20)
+  const divide = divided(25,5)
+  console.log(divide);
+  console.log(multiplyer);
+  console.log(substract);
   console.log(sum); 
 
   return (
